@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Grid Example</title>
+
+    <!-- External link to Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- Link to your CSS, must always be below Bootstrap CSS becuase we will need to override some of Bootstrap's default styles-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!--intro-->
+    <section>
+        <div class="container">
+
+            <div class="row">
+                <!--Start Row-->
+
+                <!--Start Columns-->
+                <div class="col-sm-4">
+                    <!--Column 1-->
+                    <h1>The Bootstrap<br>Grid System</h1>
+                </div>
+
+                <div class="col-sm-4">
+                    <!--Column 2-->
+                    <h1>The Bootstrap<br>Grid System</h1>
+                </div>
+
+                <div class="col-sm-4">
+                    <!--Column 3-->
+                    <h1>The Bootstrap<br>Grid System</h1>
+                </div>
+
+
+                <!--End Columns-->
+
+            </div>
+            <!--End Row-->
+
+            <h2>The Bootstrap grid system is applied by adding classes to your HTML.</h2>
+            <h2> It needs a basic HTML structure using <code>div</code> tags, with classes applied to those tags</h2>
+            <h2>It is a 12 column grid system <br>(all the column widths have to equal to 12 in a row)</h2>
+            <h2>It's Responsive – it converts to a stacked view on mobile devices</h2>
+
+
+
+        </div>
+    </section>
+
+    <!--intro cont.-->
+    <section>
+        <div class="container">
+            <h2>Columns are inside Rows
+                <br>Rows are inside a Container</h2>
+
+            <div class="row">
+                <!--Start Row-->
+
+                <!--Start Columns-->
+                <div class="col-sm-4">
+                    <!--Column 1-->
+                    <img src="images/gradient.jpg" class="img-responsive">
+                </div>
+
+                <div class="col-sm-4">
+                    <!--Column 2-->
+                    <img src="images/gradient.jpg" class="img-responsive">
+                </div>
+
+                <div class="col-sm-4">
+                    <!--Column 3-->
+                    <img src="images/gradient.jpg" class="img-responsive">
+                </div>
+                <!--End Columns-->
+
+            </div>
+            <!--End Row-->
+            <br>
+            <img src="images/code.png" width="100%">
+            <!--End Container-->
+
+            <!--
+Columns are inside Rows
+Rows are inside a Container
+
+Columns <div class="col-sm-4">...</div>
+are inside of 
+Rows <div class="row">... </div>
+are inside of a
+Container <div class="container">...</div>
+-->
+        </div>
+    </section>
+
+    <!--intro cont.-->
+    <section>
+    <div class="container">
+        <h2>You should know... </h2>
+        <p class="lead">The column classes on Bootstrap have a specific notation that determines what happens to the grid at different screen sizes.</p>
+        <div class="row">
+            <!--Start Row-->
+
+            <!--Start Columns-->
+            <div class="col-sm-4">
+                <!--Column 1-->
+                <img src="images/gradient.jpg" class="img-responsive">
+            </div>
+
+            <div class="col-sm-4">
+                <!--Column 2-->
+                <img src="images/gradient.jpg" class="img-responsive">
+            </div>
+
+            <div class="col-sm-4">
+                <!--Column 3-->
+                <img src="images/gradient.jpg" class="img-responsive">
+            </div>
+            <!--End Columns-->
+
+        </div>
+        <!--End Row-->
+        <div>
+            <br>
+            <p class="lead">
+                <code>xs</code> display grid at phone size and above<br>
+                <code>sm</code> display grid at tablet size and above<br>
+                <code>md</code> display grid at desktop size and above<br>
+                <code>lg</code> display grid at larger desktop size and above<br>
+            </p>
+
+            <p class="lead">For the purposes of this project you are going to primarily use <code>sm</code>:</p>
+            <code class="lead">
+                    &lt;div class=&quot;col-sm-4&quot;&gt;<br/>           
+                    &lt;img src=&quot;images/gradient.jpg&quot; class=&quot;img-responsive&quot;&gt;<br/>        &lt;/div&gt;
+        </code>
+
+            <p class="lead"><b>We want a grid to appear at any size larger than a phone</b></p>
+
+
+
+
+        </div>
+
+
+        <!--
+Columns are inside Rows
+Rows are inside a Container
+
+Columns <div class="col-sm-4">...</div>
+are inside of 
+Rows <div class="row">... </div>
+are inside of a
+Container <div class="container">...</div>
+-->
+    </div>
+    <!--End Container-->
+</section>
+
+    <!--example 01-->
+    <section>
+
+        <!--Start Grid Container-->
+        <div class="container">
+
+            <h2>Fixed Width<br>Example using <code>container</code> class with 3 rows and 3 columns </h2>
+            <p>The <code>container</code> class adds a default max-width and centers the rows in the middle of the screen </p><br>
+
+            <!--Start Row 01-->
+            <div class="row">
+
+                <!--Start Columns-->
+                <div class="col-sm-4">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <!-- img-responsive sizes an image to 100% of its container-->
+                    <p>col-sm-4</p>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-4</p>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-4</p>
+                </div>
+                <!--End Columns-->
+
+            </div>
+            <!--End Row 01-->
+
+            <!--Start Row 02-->
+            <div class="row">
+
+                <!--Start Columns-->
+                <div class="col-sm-4">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-4</p>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-4</p>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-4</p>
+                </div>
+                <!--End Columns-->
+
+            </div>
+            <!--End Row 02-->
+
+            <!--Start Row 03-->
+            <div class="row">
+
+                <!--Start Columns-->
+                <div class="col-sm-4">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-4</p>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-4</p>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-4</p>
+                </div>
+                <!--End Columns-->
+
+            </div>
+            <!--End Row 03-->
+
+        </div>
+
+    </section>
+
+    <!--example 02-->
+    <section>
+        <!--Start FLuid Grid Container-->
+        <div class="container-fluid">
+
+            <h2>Full Width with Padding<br>Example using <code>container-fluid</code> class with 3 rows and 3 columns </h2>
+            <p>The <code>container-fluid</code> class stretches from edge to edge of the browser screen with a little bit of padding on each side </p><br>
+
+            <!--Start Row 01-->
+            <div class="row">
+
+                <!--Start Columns-->
+                <div class="col-sm-4">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-4</p>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-4</p>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-4</p>
+                </div>
+                <!--End Columns-->
+
+            </div>
+            <!--End Row 01-->
+
+            <!--Start Row 02-->
+            <div class="row">
+
+                <!--Start Columns-->
+                <div class="col-sm-4">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-4</p>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-4</p>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-4</p>
+                </div>
+                <!--End Columns-->
+
+            </div>
+            <!--End Row 02-->
+
+            <!--Start Row 03-->
+            <div class="row">
+
+                <!--Start Columns-->
+                <div class="col-sm-4">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-4</p>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-4</p>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-4</p>
+                </div>
+                <!--End Columns-->
+
+            </div>
+            <!--End Row 03-->
+
+        </div>
+
+    </section>
+
+    <!--example 03-->
+    <section>
+        <!--There is no <div> containing our grid, it goes from edge to edge-->
+
+        <h2>Full Width, edge to edge<br>Example <b>not</b> using a containing <code>div</code><br>with 3 rows and 3 columns </h2>
+        <p>Without a <code>div</code> wrapping around our rows, content goes from edge to edge of the screen</p><br>
+
+        <!--Start Row 01-->
+        <div class="row">
+
+            <!--Start Columns-->
+            <div class="col-sm-4">
+                <img src="images/gradient.jpg" class="img-responsive">
+                <p>col-sm-4</p>
+            </div>
+
+            <div class="col-sm-4">
+                <img src="images/gradient.jpg" class="img-responsive">
+                <p>col-sm-4</p>
+            </div>
+
+            <div class="col-sm-4">
+                <img src="images/gradient.jpg" class="img-responsive">
+                <p>col-sm-4</p>
+            </div>
+            <!--End Columns-->
+
+        </div>
+        <!--End Row 01-->
+
+        <!--Start Row 02-->
+        <div class="row">
+
+            <!--Start Columns-->
+            <div class="col-sm-4">
+                <img src="images/gradient.jpg" class="img-responsive">
+                <p>col-sm-4</p>
+            </div>
+
+            <div class="col-sm-4">
+                <img src="images/gradient.jpg" class="img-responsive">
+                <p>col-sm-4</p>
+            </div>
+
+            <div class="col-sm-4">
+                <img src="images/gradient.jpg" class="img-responsive">
+                <p>col-sm-4</p>
+            </div>
+            <!--End Columns-->
+
+        </div>
+        <!--End Row 02-->
+
+        <!--Start Row 03-->
+        <div class="row">
+
+            <!--Start Columns-->
+            <div class="col-sm-4">
+                <img src="images/gradient.jpg" class="img-responsive">
+                <p>col-sm-4</p>
+            </div>
+
+            <div class="col-sm-4">
+                <img src="images/gradient.jpg" class="img-responsive">
+                <p>col-sm-4</p>
+            </div>
+
+            <div class="col-sm-4">
+                <img src="images/gradient.jpg" class="img-responsive">
+                <p>col-sm-4</p>
+            </div>
+            <!--End Columns-->
+
+        </div>
+        <!--End Row 03-->
+
+    </section>
+
+    <!--example 04-->
+    <section>
+
+        <!--Start Grid Container-->
+        <div class="container">
+
+            <h2>Example using variations in columns widths over a few rows</h2>
+            <br>
+
+            <!--Start Row 01, 12 columns-->
+            <div class="row">
+
+                <!--Start Columns-->
+                <div class="col-sm-1">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <!-- img-responsive sizes an image to 100% of its container-->
+                    <p>col-sm-1</p>
+                </div>
+
+                <div class="col-sm-1">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-1</p>
+                </div>
+
+                <div class="col-sm-1">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <!-- img-responsive sizes an image to 100% of its container-->
+                    <p>col-sm-1</p>
+                </div>
+                <div class="col-sm-1">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <!-- img-responsive sizes an image to 100% of its container-->
+                    <p>col-sm-1</p>
+                </div>
+
+                <div class="col-sm-1">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-1</p>
+                </div>
+
+                <div class="col-sm-1">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <!-- img-responsive sizes an image to 100% of its container-->
+                    <p>col-sm-1</p>
+                </div>
+                <div class="col-sm-1">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <!-- img-responsive sizes an image to 100% of its container-->
+                    <p>col-sm-1</p>
+                </div>
+
+                <div class="col-sm-1">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-1</p>
+                </div>
+
+                <div class="col-sm-1">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-1</p>
+                </div>
+                <div class="col-sm-1">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <!-- img-responsive sizes an image to 100% of its container-->
+                    <p>col-sm-1</p>
+                </div>
+                <div class="col-sm-1">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-1</p>
+                </div>
+
+                <div class="col-sm-1">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-1</p>
+                </div>
+                <!--End Columns-->
+
+            </div>
+            <!--End Row 01-->
+
+            <!--Start Row 02, 4 columns-->
+            <div class="row">
+
+                <!--Start Columns-->
+                <div class="col-sm-3">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-3</p>
+                </div>
+
+                <div class="col-sm-3">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-3</p>
+                </div>
+
+                <div class="col-sm-3">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-3</p>
+                </div>
+
+                <div class="col-sm-3">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-3</p>
+                </div>
+                <!--End Columns-->
+
+            </div>
+            <!--End Row 02-->
+
+            <!--Start Row 03, 2 columns-->
+            <div class="row">
+
+                <!--Start Columns-->
+                <div class="col-sm-6">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-6</p>
+                </div>
+
+                <div class="col-sm-6">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-6</p>
+                </div>
+                <!--End Columns-->
+
+            </div>
+            <!--End Row 03-->
+
+        </div>
+
+    </section>
+
+    <!--example 05-->
+    <section>
+
+        <!--Start Grid Container-->
+        <div class="container">
+
+            <h2>Using text and image over staggered rows</h2>
+            <br>
+
+            <!--Start Row 01-->
+            <div class="row">
+
+                <!--Start Columns-->
+                <div class="col-sm-4">
+                    <h3>This is a title</h3>
+                    <p>This is more text</p>
+                    <p>col-sm-4</p>
+                </div>
+
+                <div class="col-sm-8">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-8</p>
+                </div>
+                <!--End Columns-->
+            </div>
+            <!--End Row 01-->
+
+            <br>
+            <!-- added a line break to create more whitespace, but you need do this in CSS using margins-->
+            <!--Start Row 02-->
+            <div class="row">
+
+                <div class="col-sm-8">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-8</p>
+                </div>
+
+                <!--Start Columns-->
+                <div class="col-sm-4">
+                    <h3>This is a title on the other side</h3>
+                    <p>This is more text</p>
+                    <p>col-sm-4</p>
+                </div>
+
+                <!--End Columns-->
+            </div>
+            <!--End Row 02-->
+
+        </div>
+
+    </section>
+    
+    <!--example 06-->
+    <section>
+
+        <!--Start Grid Container-->
+        <div class="container">
+
+            <h2>Using Offsets</h2>
+            <br>
+
+            <!--Start Row 01-->
+            <div class="row">
+
+                <div class="col-sm-4 col-sm-offset-8">
+                    <!--two classes seperated by the space, the second class controls the amount of column spaces to offset from the left-->
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-4, offset by 8</p>
+                </div>
+                <!--End Columns-->
+            </div>
+            <!--End Row 01-->
+
+            <br>
+            <!-- added a line break to create more whitespace, but you need do this in CSS using margins-->
+            <!--Start Row 02-->
+            <div class="row">
+
+                <div class="col-sm-8 col-sm-offset-2">
+                    <img src="images/gradient.jpg" class="img-responsive">
+                    <p>col-sm-8, offset by 2</p>
+                </div>
+
+
+
+                <!--End Columns-->
+            </div>
+            <!--End Row 02-->
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+/*IGNORE --- this CSS is used to display the tutorial */
+
+body {
+    
+}
+
+h1 {
+    color: rgb(255, 250, 250);
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: .5px;
+
+}
+
+section:first-of-type div div {
+/*target any div that's inside of div inside the first instance of a section */
+    
+    background-color: rgb(27, 28, 28);
+    border: 5px solid white;
+}
+
+
+h2 {    
+    margin-top: 50px;
+}
+
+section {
+    min-height: 100vh;
+    border-bottom: thin solid lightgrey;
+}
